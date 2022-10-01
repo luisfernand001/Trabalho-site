@@ -1,0 +1,244 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+.container {
+  display: flex;
+  background-color: #141d3c;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#a {
+  font-weight: 800;
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  font-family: verdana;
+}
+#a:hover {
+  color: rgb(240, 76, 76);
+}
+img {
+  width: 300px;
+}
+.box2 {
+  background: linear-gradient(rgba(21, 20, 102, 0.4), rgba(7, 7, 34, 0.4)),
+    url(../img/campo.jpg) no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+  text-align: center;
+  font-family: verdana;
+  padding: 8%;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.h1 {
+  margin-bottom: 30px;
+  font-size: 30px;
+  color: white;
+  font-family: verdana;
+}
+
+.p1 {
+  margin-bottom: 30px;
+  font-size: 30px;
+  color: white;
+  font-family: verdana;
+}
+#p7 {
+  font-size: 20px;
+  color: white;
+  margin-top: 20px;
+}
+
+.box3 {
+  font-family: verdana;
+  color: white;
+  padding: 20px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #141d3c;
+  background-repeat: no-repeat;
+}
+#sobre {
+  margin-top: 50px;
+  font-size: 60px;
+}
+#para2 {
+  margin-top: 50px;
+  font-size: 40px;
+}
+
+.box4 {
+  text-align: center;
+  background-color: #141d3c;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section2 {
+  align-items: center;
+}
+#ser {
+  margin-top: 40px;
+  color: white;
+  font-family: verdana;
+  font-size: 40px;
+}
+
+.box9 {
+  display: flex;
+  justify-content: center;
+}
+#img3 {
+  border: 2px solid #141d3c;
+  width: 33%;
+}
+#img4 {
+  border: 2px solid #141d3c;
+  width: 33%;
+}
+
+.box14 {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  background-color: black;
+}
+#top:hover {
+  color: rgb(240, 76, 76);
+}
+#top {
+  font-family: Verdana;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: white;
+}
+.boxcontainer {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #141d3c;
+  display: flex;
+  justify-content: space-between;
+}
+.boxcontainer2 {
+  width: 30%;
+  box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.665);
+  background-color: white;
+  padding: 80px 20px;
+  margin: 25px;
+  border-radius: 30px;
+  text-align: center;
+}
+p {
+  font-family: verdana;
+}
+#p1 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 600;
+}
+.boxcontainer3 {
+  color: white;
+  padding: 80px 20px;
+  margin: 25px;
+  border-radius: 30px;
+  text-align: center;
+}
+.boxcontainer3 a:hover {
+  color: rgb(240, 76, 76);
+}
+.boxcontainer3 a {
+  font-family: verdana;
+  color: white;
+  text-decoration: none;
+}
+.boxcontainer4 {
+  background-color: #141d3c;
+  display: flex;
+  justify-content: center;
+}
+.boxcontainer4 img {
+  width: 32px;
+}
+.btn:link,
+.btn:visited {
+  margin-top: 40px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px 40px;
+  display: inline-block;
+  border-radius: 100px;
+  transition: all 0.2s;
+  /* position: absolute; */
+}
+.boxcontainer2 img {
+  width: 150px;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-white {
+  background-color: #fff;
+  color: #141d3c;
+}
+
+.btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+}
+
+.btn-white::after {
+  background-color: #fff;
+}
+
+.btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
+.btn-animated {
+  animation: moveInBottom 5s ease-out;
+  animation-fill-mode: backwards;
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
