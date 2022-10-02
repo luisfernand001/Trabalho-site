@@ -25,7 +25,7 @@ img {
 }
 .box2 {
   background: linear-gradient(rgba(21, 20, 102, 0.4), rgba(7, 7, 34, 0.4)),
-    url(img/campo.jpg) no-repeat;
+    url(../img/campo.jpg) no-repeat;
   background-size: 100%;
   background-attachment: fixed;
   text-align: center;
@@ -67,6 +67,7 @@ img {
   flex-direction: column;
   background-color: #141d3c;
   background-repeat: no-repeat;
+  
 }
 #sobre {
   margin-top: 50px;
@@ -102,10 +103,12 @@ section2 {
 #img3 {
   border: 2px solid #141d3c;
   width: 33%;
+  cursor: pointer;
 }
 #img4 {
   border: 2px solid #141d3c;
   width: 33%;
+  cursor: pointer;
 }
 
 .box14 {
@@ -141,6 +144,7 @@ section2 {
   margin: 25px;
   border-radius: 30px;
   text-align: center;
+  cursor: pointer;
 }
 p {
   font-family: verdana;
@@ -157,9 +161,11 @@ p {
   margin: 25px;
   border-radius: 30px;
   text-align: center;
+  
 }
 .boxcontainer3 a:hover {
   color: rgb(240, 76, 76);
+  cursor: pointer;
 }
 .boxcontainer3 a {
   font-family: verdana;
@@ -242,65 +248,3 @@ p {
     transform: translateY(0px);
   }
 }
-
-/* ini: Preloader */
-
-#preloader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #0c0b34; /* cor do background que vai ocupar o body */
-  z-index: 999; /* z-index para jogar para frente e sobrepor tudo */
-}
-#preloader .inner {
-  position: absolute;
-  top: 50%; /* centralizar a parte interna do preload (onde fica a animação)*/
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.bolas > div {
-  display: inline-block;
-  background-color: #fff;
-  width: 25px;
-  height: 25px;
-  border-radius: 100%;
-  margin: 3px;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  animation-name: animarBola;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-}
-.bolas > div:nth-child(1) {
-  animation-duration: 0.75s;
-  animation-delay: 0;
-}
-.bolas > div:nth-child(2) {
-  animation-duration: 0.75s;
-  animation-delay: 0.12s;
-}
-.bolas > div:nth-child(3) {
-  animation-duration: 0.75s;
-  animation-delay: 0.24s;
-}
-
-@keyframes animarBola {
-  0% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    opacity: 1;
-  }
-  16% {
-    -webkit-transform: scale(0.1);
-    transform: scale(0.1);
-    opacity: 0.7;
-  }
-  33% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    opacity: 1;
-  }
-}
-/* end: Preloader */
